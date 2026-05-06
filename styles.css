@@ -1,0 +1,286 @@
+body {
+
+  background-image:
+  url(./images/lotr\ wallpaper.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 1865px;
+  
+  
+} 
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.list-one {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.list-one {
+  display: flex;
+
+  border-right: 1px solid #bbb;
+}
+
+.list-one:last-child {
+  border-right: none;
+}
+
+.list-one a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.list-one a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+button {
+    /* margin-top: 300px; */
+     margin-top: 20px;
+     margin-left: 45%;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: darkgreen;
+  color: white;
+  
+ 
+  transition: 0.3s;
+}
+
+.choose-quiz {
+  text-align:center;
+  font-family: "Jim Nightshade", cursive;
+  font-size: 45px; 
+  color: black;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+.quiz-choice {
+  display: block;
+  padding: 15px 30px;
+  width: 400px;
+  
+
+  border: 2px solid black;
+  border-radius: 20px;
+  color: rgb(233, 172, 17);
+  
+  transition: all 0.3s ease;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+
+  background-color: black;
+  color: white;
+
+  text-align: center;
+}
+
+/* login page */
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container {
+  margin-top: 80px;
+  padding: 40px;
+  width: 350px;
+
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid gold;
+  border-radius: 15px;
+
+  text-align: center;
+  color: white;
+
+  animation: fadeSlideIn 1.5s ease-out;
+}
+
+.login-container {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.login-title {
+  font-family: "Jim Nightshade", cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+.button-login {
+  width: 70%;
+  padding: 12px;
+  margin-left: 5%;
+
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  
+  transition: 0.3s;
+}
+
+.button-login:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 10px;
+
+  color: gold;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+ /* top scores page styling */
+
+ .scores-title {
+  text-align: center;
+  font-family: "Jim Nightshade", cursive;
+  font-size: 60px;
+  color: gold;
+  margin-top: 30px;
+
+  animation: fadeSlideIn 1.5s ease-out;
+}
+
+.scores-container {
+  width: 80%;
+  max-width: 800px;
+
+  margin: 40px auto;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid gold;
+  border-radius: 15px;
+
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.scores-table th {
+  padding: 12px;
+  border-bottom: 2px solid gold;
+  font-size: 18px;
+}
+
+.scores-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.scores-table tr:first-child {
+  color: gold;
+  font-weight: bold;
+}
+
+/* styles for quiz page */
+
+.quiz-title {
+  text-align: center;
+  font-family: "Jim Nightshade", cursive;
+  font-size: 50px;
+  color: gold;
+  margin-top: 20px;
+}
+
+.quiz-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid gold;
+  border-radius: 15px;
+
+  color: white;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.button-quiz {
+  width: 70%;
+  padding: 12px;
+  margin-left: 15%;
+
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  
+  transition: 0.3s;
+}
+
+.button-quiz:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+          
